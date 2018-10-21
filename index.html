@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>word Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- close button at the right most corner -->
+    <div id="close-btn">
+        <div class="row mt-2 mt-4 mr-4">
+            <div class="col-md-12 text-right">
+
+                <button type="button" id="quit-button" class="btn-danger " onclick="Quit()">X</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container ">
+        <!-- score position controller from the T -->
+        <div class="row mb-5">
+            <div class="col-md-12"></div>
+            <h1 id="myid"></h1>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12"></div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12"></div>
+        </div>
+
+        <!-- score container win and losses -->
+        <div id="gameinfocontainer">
+            <div class="row mt-5">
+                <div class="col-md-10 mt-5"> </div>
+                <div class="col-md-1">
+                    <h1 class="game-statistics  btn-lg text-info" id="win-statistics">Wins:<span id="wins" class="pl-2 text-white"></span></h1>
+                </div>
+                <div class="col-md-1">
+                    <h1 class="game-statistics  btn-lg text-danger" id="loss-statistics">Losses:<span id="losses" class="pl-2 text-white"></span></h1>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- game info feedback and instructions -->
+
+        <div class="row mt-1">
+            <div class="col-md-12 mt-5">
+            </div>
+        </div>
+
+        <!-- game feedback left all rows, row span-->
+        <div class="row mt-1">
+            <div class="col-md-3"></div>
+            <div class="col-md-5">
+                <h5 id="game-feedback" class="text-info text-center text-white font-weight-light font-italic"></h5>
+            </div>
+            <div class="col-md-4">
+                <!-- INSTRUCTION TO START THE GAME IN SUB ROWS  -->
+                <div class="row" id="starting-instructions">
+                    <div class="col-md-12">
+                        <h4 class="text-white font-weight-light font-italic" id="game-instructions"><span>Press Space
+                                Bar to start the game.</span></h4>
+                    </div>
+                </div>
+                <!-- GAME INFO IN SUB ROWS -->
+                <div id="gameinfocontainer2">
+                    <div class="row mt-1">
+                        <div class="col-md-12 game-statistics btn-info  btn-lg">
+                            <h3 id="random-word-name"></h3>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12 game-statistics bg-secondary btn-lg">
+                            <h5 class="text-white">Letters Guessed So Far:
+                                <hr><span id="letters-guessed"></span></h5>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <h5 class="game-statistics text-info">Attempt remaining:<span id="attempt-remaining" class="pl-4"></span></h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row"><div class="col-md-12 mt-5">
+        <footer class="text-center text-white mx-auto mb-0  py-0  fixed-bottom">
+            <address> &copy;2018 Lidetu Neshnega</address>
+               
+            </footer></div></div>
+    </div>
+    
+
+
+
+    <!-- Load the associated JavaScript files -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
