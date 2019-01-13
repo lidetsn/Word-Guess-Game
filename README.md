@@ -1,8 +1,8 @@
 # Word-Guess-Game
 
-Word Guess  These apps will run in the browser, and feature dynamically updated HTML and CSS powered by JavaScript code.
+Word Guess  This app will run in the browser, and feature dynamically updated HTML and CSS powered by JavaScript code.
 
-# . Display the following on the page:
+# Display the following on the page:
 
 #. Press any key to get started!
 
