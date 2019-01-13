@@ -77,7 +77,7 @@ var game = {
             losses.innerHTML = game.gameState.losses;
             attemptRemaining.innerHTML = game.gameState.attemptRemaining;
 
-            randomWordCharacterArray.forEach(function (character) {
+            randomWordCharacterArray.forEach(function(character) {
                 if (alphabetArray.indexOf(character) <= -1) {// in case the random word contains non alphabetic leter eg 2pac
                     placeHolderCharactersToDisplay += character;
                 }
@@ -148,14 +148,14 @@ var game = {
         if (placeHolderCharactersToDisplay.indexOf("___ . ") <= -1 && game.gameState.attemptRemaining >= 1) {
             game.gameState.wins++;
             game.provideGameFeedback("win");
-            setTimeout(setNewGame(), 15000);
+            setTimeout(setNewGame, 5000);
 
         }
         else if (placeHolderCharactersToDisplay.indexOf("___ . ") > -1 && game.gameState.attemptRemaining <= 0) {
             game.gameState.losses++;
             game.provideGameFeedback("loss");
             // playSet();
-            setTimeout(setNewGame(), 15000);
+            setTimeout(setNewGame, 5000);
         }
 
         wins.innerHTML = game.gameState.wins;
@@ -168,6 +168,7 @@ var game = {
 //--------------------------------------------------------------------------
 //jquery code to launch the js 
 /* $(document).ready(function () {  
+
   startPlay();
    });*/
 //****************************************************** */ 
